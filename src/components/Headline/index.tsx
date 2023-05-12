@@ -9,8 +9,8 @@ export default function Headline() {
           <p>espacio de Meditación</p>
         </div>
       </div>
-      <div className={style.image}>
-        <Image src="/zen.jpg" alt="" fill style={{ objectFit: "cover" }} />
+      <div className={style.imgwrap}>
+        <Image src="/zen.jpg" alt="" fill style={{ objectFit: "cover"}} className={style.img} />
       </div>
     </section>
   );

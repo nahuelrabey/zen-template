@@ -1,3 +1,4 @@
+.title{display: none;}
 .service {
   height: 100vh;
   display: flex;
@@ -41,14 +42,50 @@
     // }
   }
 
-  &:nth-of-type(odd) {
-    .imgwrapper {
-      order: 2;
-    }
-    .content {
-      order: 1;
-    }
+}
+
+@media screen and (max-width: 426px) {
+  .title{
+    display: block;
+    font-weight: 400;
+    width: 90%;
+    margin:auto;
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
   }
+  .container{
+    margin: 20vh 0;
+  }
+  .service{
+    flex-direction: column;
+    margin: 2em 0;
+
+    .imgwrapper,
+    .content{
+      width: 90%;
+      display: block;
+      *{
+        width: 100%;
+      }
+    }
+
+    .content{
+      div{
+        p{
+          text-align: justify;
+        }
+      }
+    }
+
+    .imgwrapper{
+      height: 50vh;
+      .img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+  &:nth-of-type(odd),
   &:nth-of-type(even) {
     .imgwrapper {
       order: 1;
@@ -57,6 +94,9 @@
       order: 2;
     }
   }
+
+  }
+    
 }
 
 .action {

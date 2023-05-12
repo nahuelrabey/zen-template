@@ -2,7 +2,8 @@ import style from "./style.module.scss";
 import Image from "next/image";
 export default function Service() {
   return (
-    <section>
+    <section className={style.container}>
+      <h2 className={style.title}>Servicios</h2>
       <section className={style.service}>
         <div className={style.content}>
           <div>
