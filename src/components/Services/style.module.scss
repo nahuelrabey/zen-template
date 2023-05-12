@@ -42,6 +42,22 @@
     // }
   }
 
+  &:nth-of-type(odd){
+    .imgwrapper {
+      order: 1;
+    }
+    .content {
+      order: 2;
+    }
+  }
+  &:nth-of-type(even) {
+    .imgwrapper {
+      order: 2;
+    }
+    .content {
+      order: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 426px) {
