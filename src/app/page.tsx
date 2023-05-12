@@ -1,8 +1,7 @@
 import Header from "@/components/Header";
-import style from "./page.module.scss";
-import Image from "next/image";
 import Headline from "@/components/Headline";
 import Service from "@/components/Services";
+import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <>
@@ -11,6 +10,7 @@ export default function Home() {
         <Headline/>
         <Service/>
       </main>
+      <Footer/>
     </>
   );
 }

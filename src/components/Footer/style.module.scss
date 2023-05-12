@@ -1,0 +1,16 @@
+.footer{
+    height: 20vh;
+    border-top: 1px solid black;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        text-decoration: underline;
+        color: rgb(34, 33, 33)
+    }
+    a:hover{
+        color: rgb(82, 82, 82)
+    }
+}
