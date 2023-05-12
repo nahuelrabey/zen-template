@@ -6,15 +6,18 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-    <Head>
-      <meta property="og:image" content="https://i.ibb.co/WPCj1rT/Create-Next-App.png" />
-    </Head>
-      <Header/>
+      <Head>
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/WPCj1rT/Create-Next-App.png"
+        />
+      </Head>
+      <Header />
       <main>
-        <Headline/>
-        <Service/>
+        <Headline />
+        <Service />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
